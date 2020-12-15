@@ -1,0 +1,30 @@
+#main{
+    font-size: 50px;
+    font-family: monospace;
+    margin-top: 100px;
+    margin: auto;
+    background-color: lightblue;
+    text-align: center;
+    width: 1000px;
+}
+html,body {
+
+    margin: 0;
+    padding: 0;
+    height: 100%;
+
+}
+
+
+#background {
+
+    border: 0;
+    padding: 0; 
+    background-color: lightgray;
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+
+}
+
+

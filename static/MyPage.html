@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/index.js"></script>
+
+<style>
+    #background {
+        background: #cccccc;
+        height: 1000px;
+    }
+
+    #title {
+        background: lightblue;
+    }
+
+
+    #Line_front {
+        background: lightblue;
+        height: 50px;
+        width: 600px;
+    }
+
+    #id {
+        height: 25px;
+        width: 500px;
+    }
+
+    #name {
+        height: 25px;
+        width: 500px;
+    }
+
+
+    #email {
+        height: 25px;
+        width: 500px;
+    }
+
+    #User_id {
+        height: 25px;
+        width: 500px;
+    }
+
+    #pwd {
+        height: 25px;
+        width: 500px;
+    }
+
+    #pwd_check {
+        height: 25px;
+        width: 500px;
+    }
+</style>
+
+<body>
+    <div id="background">
+        <div id="container">
+            <div id="title">
+                <font size="10" color="blue"><strong>Mypage</strong></font>
+            </div>
+        </div>
+        <center>
+            <p>
+            <div><strong>회원가입 정보</strong></div>
+            </p>
+
+            <form id="User_information" method="POST">
+                <p>
+                <div id="Line_front">
+                    <input type="text" id="id" placeholder="아이디">
+                </div>
+                </p>
+
+                <p>
+                <div id="#Line_front">
+                    <input type="text" id="name" placeholder="이름">
+                </div>
+                </p>
+
+
+                <p>
+                <div id="#Line_front">
+                    <input type="text" id="User_id" placeholder="고유번호">
+                </div>
+                </p>
+
+
+                <p>
+                <div id="#Line_front">
+                    <input type="text" id="pwd" placeholder="비밀번호">
+                </div>
+                </p>
+
+
+                <p>
+                <div id="#Line_front">
+                    <input type="text" id="pwd_check" placeholder="비밀번호 확인">
+                </div>
+                </p>
+
+                <center><button onclick="Send_user_information()">수정</button></center>
+            </form>
+
+
+        </center>
+    </div>
+
+
+</body>
+
+</html>
